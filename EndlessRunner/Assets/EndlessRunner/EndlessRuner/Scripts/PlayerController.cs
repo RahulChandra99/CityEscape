@@ -136,7 +136,6 @@ public class PlayerController : MonoBehaviour
         {
             //decrease health by 1
             GameManager.Instance.playerHealth--;
-            Debug.Log("Health: " + GameManager.Instance.playerHealth);
 
             //Camera shake or slow down game or music slow
             StartCoroutine(CamShake());
@@ -148,7 +147,6 @@ public class PlayerController : MonoBehaviour
        else if (other.gameObject.CompareTag("Coin"))
         {
             coinAudio.Play();
-            Debug.Log("sound Test");
         }
 
     }

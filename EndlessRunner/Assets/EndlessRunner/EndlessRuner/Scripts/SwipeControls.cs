@@ -9,8 +9,7 @@ public class SwipeControls : MonoBehaviour
     private void Update()
     {
         tap = swipeDown = swipeUp = swipeLeft = swipeRight = false;
-
-        Debug.Log(swipeDown);
+        
 
         if (Input.GetMouseButtonDown(0))
         {
